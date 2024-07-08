@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Activities</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="activities">
+                <p>Average Total Recruitment Activities I Perform A Day Is <span class="highlight" id="activities-value"> 50</span> </p>
+                <div class="slider">
+                    <input type="range" min="0" max="100" value="50" id="activities-slider">
+                    <label>Avg Hours Per Day                    </label>
+                </div>
+            </div>
+            <div class="time-value">
+                <p>I value my time at <span class="highlight" id="time-value">$50</span> per hour</p>
+                <div class="slider">
+                    <input type="range" min="0" max="100" value="50" id="time-slider">
+                    <label>Estimated time value per user hour</label>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="savings">
+                <p>$<span class="highlight" id="savings-value">600</span> SAVED <span class="note">*</span></p>
+            </div>
+            <p class="note-text">* Estimated monthly savings in terms of time. Actuals may vary based on usage.</p>
+        </div>
+    </div>
+    <script src="1.js"></script>
+</body>
+</html>
