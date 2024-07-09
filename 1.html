@@ -10,10 +10,10 @@
     <div class="container">
         <div class="left">
             <div class="activities">
-                <p>Average Total Recruitment Activities I Perform A Day Is <span class="highlight" id="activities-value"> 50</span> </p>
+                <p>Average Total Recruitment Activities I Perform A Day</p>
                 <div class="slider">
                     <input type="range" min="0" max="100" value="50" id="activities-slider">
-                    <label>Avg Hours Per Day                    </label>
+                    <label>Avg Hours Per Day Is <span class="highlight" id="activities-value"> 50</span></label>
                 </div>
             </div>
             <div class="time-value">
@@ -26,11 +26,22 @@
         </div>
         <div class="right">
             <div class="savings">
-                <p>$<span class="highlight" id="savings-value">600</span> SAVED <span class="note">*</span></p>
+                <p>
+                    <span class="highlight" id="savings-value">$600</span>
+                    <span class="divider"></span>
+                    <span class="saved-text">SAVED <span class="note">*</span></span>
+                </p>
             </div>
-            <p class="note-text">* Estimated monthly savings in terms of time. Actuals may vary based on usage.</p>
+            <div class="hours_saved">
+                <p>
+                  <span class="hours-text" id="hours-saved-value">0</span>
+                  <span class="hours_divider"></span>
+                  <span class="hours_text">HOURS SAVED</span>
+                </p>
+              </div>
         </div>
-    </div>
+    </div>  
+    <p class="note-text">* Estimated monthly savings in terms of time. Actuals may vary based on usage.</p>
     <script src="1.js"></script>
 </body>
 </html>
