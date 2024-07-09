@@ -2,8 +2,9 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100vh;
   margin: 0;
   font-size: 17px;
@@ -16,6 +17,8 @@ body {
   overflow: hidden;
   height: 45%;
   border-radius: 18px;
+  margin-bottom: 20px; /* Add some margin to space it from the note text */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
 }
 
 .left, .right {
@@ -43,17 +46,18 @@ body {
   margin-bottom: 20px;
 }
 
-.highlight {
-  color: black;
-  font-weight: bold;
+.activities .highlight {
+  color: red;
+}
+
+.time-value .highlight {
+  color: green;
 }
 
 .slider {
   margin-top: 10px;
   margin-bottom: 45px;
-  border-radius: 8px;
   overflow: hidden;
-  border-radius: 8px;
 
 }
 
@@ -77,39 +81,109 @@ input[type="range"]:hover {
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  width: 25px; /* Width of the thumb */
-  height: 25px; /* Height of the thumb */
+  width: 20px; /* Width of the thumb */
+  height: 20px; /* Height of the thumb */
   background: white; /* Changed to white */
-  border: 2px solid #888; /* Added border */
-  border-radius: 50%; /* Circle shape */
-  cursor: pointer; /* Cursor on hover */
-}
-
-input[type="range"]::-moz-range-thumb {
-  width: 25px; /* Width of the thumb */
-  height: 25px; /* Height of the thumb */
-  background: white; /* Changed to white */
-  border: 2px solid #888; /* Added border */
+  border: 1px solid #888; /* Added border */      
   border-radius: 50%; /* Circle shape */
   cursor: pointer; /* Cursor on hover */
 }
 
 
 
-.savings {
-  background-color: #eee;
-  color: black;
-  padding: 10px;
-  border-radius: 8px;
-  font-size: 24px;
+
+.savings p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
 }
 
+
+
+.divider {
+  width: 1px; /* Vertical line */
+  height: 45px; /* Adjust height as needed */
+  background-color: #1d1919; /* Line color */
+margin-left: 200px;
+position: absolute;
+
+}
+
+.saved-text {
+  font-size: 18px;
+  font-weight: bold;
+}
 .note {
-  font-size: 12px;
+  font-size: 17px;
 }
 
 .note-text {
-  font-size: 12px;
-  color: #888;
-  margin-top: 10px;
+  font-size: 13px;
+  color: black;
+  text-align: center; /* Center the text */
+  margin-top: 20px; /* Add some margin to space it from the container */
+  font-weight: bold;
+}
+
+.savings {
+  background-color: #f0f0f0; /* Greyish background */
+  color: black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  padding: 15px 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 300px;
+  margin-left: 35px;
+  margin-top: -20px; /* Adjusted margin-top */
+  height: 23px; /* Fixed height for the container */
+}
+
+.hours_saved {
+  background-color: #f0f0f0; /* Greyish background */
+  color: black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  padding: 15px 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 300px;
+  margin-left: 35px;
+  margin-top: 60px; /* Adjusted margin-top */
+  height: 23px; /* Fixed height for the container */
+}
+
+
+.hours_saved p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+}
+
+
+
+.hours_divider {
+  width: 1px; /* Vertical line */
+  height: 45px; /* Adjust height as needed */
+  background-color: #1d1919; /* Line color */
+margin-left: 200px;
+position: absolute;
+
+}
+
+.hours_text {
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 209px;
+  position: absolute;
 }
